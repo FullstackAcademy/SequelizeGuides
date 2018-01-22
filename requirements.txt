@@ -12,9 +12,6 @@ MarkupSafe==1.0
 mkdocs==0.17.2
 pipreqs==0.4.9
 PyYAML==3.12
-requests==2.18.4
-rsa==3.4.2
-s3transfer==0.1.10
 tornado==4.5.3
 urllib3==1.22
 yarg==0.1.9
