@@ -1,4 +1,3 @@
-# Search Operators
 [Docs](http://docs.sequelizejs.com/manual/tutorial/querying.html#operators)
 
 We often want to specify comparisons like "greater than", "less than" in our `where` clauses.

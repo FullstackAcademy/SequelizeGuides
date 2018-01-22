@@ -1,5 +1,3 @@
-# Virtual Columns
-
 "Virtual" columns are columns that *do not* get saved in your database - they are calculated on the fly based on the values of other columns. They are helpful for saving space if there are values we want to use on our instances that can be easily calculated.
 
 Virtual columns always have the data type of Sequelize.VIRTUAL.

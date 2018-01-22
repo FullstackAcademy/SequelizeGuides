@@ -1,4 +1,3 @@
-# Associations
 [Docs](http://docs.sequelizejs.com/manual/tutorial/associations.html)
 
 Associations in Sequelize establish three things:

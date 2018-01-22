@@ -1,5 +1,3 @@
-# One-Many Associations
-
 A one-many association is established by pairing a `belongsTo` and a `hasMany` relation (though like `hasOne`, the `belongsTo` is sometimes omitted).
 
 Given our Pug and Owner, we might allow an owner to have multiple pugs like so:

@@ -1,4 +1,3 @@
-# Getters and Setters
 [Docs](http://docs.sequelizejs.com/manual/tutorial/models-definition.html#getters-setters)
 
 Getters and setters are ways of customizing what happens when someone 'gets' or 'sets' a property on an instance. 'Get' and 'set' are referred to as "meta-operations" in JavaScript.

@@ -1,5 +1,3 @@
-# Many-Many Associations
-
 One-One and One-Many associations are very similar. Many-Many associations are different! Instead of placing a foreign key in one table, they create a brand new "join" table where each row contains a foreign key for each entity in the relationship.
 
 For our example, let's introduce a new table, Friend:

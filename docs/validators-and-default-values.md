@@ -1,5 +1,3 @@
-#Validators and Default Value
-
 [Docs](http://docs.sequelizejs.com/manual/tutorial/models-definition.html#validations)
 
 The example below demontrates usage for important validations (allowNull, min/max) and also demonstrates how to set a default value (defaultValue)

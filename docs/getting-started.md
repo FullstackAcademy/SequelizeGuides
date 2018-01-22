@@ -1,6 +1,4 @@
-# Getting started
-
-## Installation
+# Installation
 
 Sequelize is available via NPM.
 
@@ -15,7 +13,7 @@ $ npm install --save sqlite3
 $ npm install --save tedious // MSSQL
 ```
 
-## Setting up a connection
+# Setting up a connection
 
 Sequelize allow you to use a connection uri:
 
@@ -24,7 +22,7 @@ const Sequelize = require('sequelize')
 const db = new Sequelize('postgres://localhost:5432/your-db')
 ```
 
-## Your first model
+# Your first model
 
 Models are defined with `sequelize.define('name', {attributes}, {options})`.
 
@@ -52,7 +50,7 @@ await User.create({
 
 You can read more about creating models and available types at [Column Types](/column-types)
 
-## Your first query
+# Your first query
 
 ```js
 const users = await User.findAll();

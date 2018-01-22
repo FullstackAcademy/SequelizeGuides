@@ -1,5 +1,3 @@
-# One-One Relations
-
 A one-one association is established by pairing a `belongsTo` and a `hasOne` association (though the `hasOne` is often omitted).
 
 Say we have two model tables, `Pug` and an `Owner`. We might associate them like so:
