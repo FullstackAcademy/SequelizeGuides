@@ -7,7 +7,7 @@ pages:
     - Search Operators: "search-operators.md"
     - "Inserting, updating and destroying": "inserting-updating-destroying.md"
     - Hooks: "hooks.md"
-    - Instance and Class Methods: "instance-and-class-Methods.md"
+    - Instance and Class Methods: "instance-and-class-methods.md"
     - Getters and Setters: "getters-and-setters.md"
     - Virtual Columns: "virtual-columns.md"
     - Associations: "associations.md"
