@@ -1,0 +1,18 @@
+site_name: Sequelize Guides
+pages:
+    - Getting Started: "getting-started.md"
+    - Column Types: "column-types.md"
+    - Validators and Default Valuew: "validators-and-default-values.md"
+    - Querying Models: "querying.md"
+    - Search Operators: "search-operators.md"
+    - "Inserting, updating and destroying": "inserting-updating-destroying.md"
+    - Hooks: "hooks.md"
+    - Instance and Class Methods: "instance-and-class-Methods.md"
+    - Getters and Setters: "getters-and-setters.md"
+    - Virtual Columns: "virtual-columns.md"
+    - Associations: "associations.md"
+    - One-One Relations: "one-one-relations.md"
+    - One-Many Associations: "one-many-associations.md"
+    - Many-Many Associations: "many-many-associations.md"
+    - Eager Loading: "eager-loading.md"
+theme: readthedocs
