@@ -1,5 +1,5 @@
 # Model.findOrCreate
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-findorcreate-search-for-a-specific-element-or-create-it-if-not-available)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-findorcreate-search-for-a-specific-element-or-create-it-if-not-available)
 
 Finds an instance that matches the specified query. If no such instance exists, it will create one. This method is a little funny - it returns a promise for an array! The first element of the array is the instance. The second element is a boolean (true or false), which will be true if the instance was newly created, and false if it wasn't (that is, an existing match was found).
 
@@ -135,7 +135,7 @@ console.log(updatedCody.age) // 8
 ```
 
 ## instance.destroy
-[Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#destroying-deleting-persistent-instances)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#destroying-deleting-persistent-instances)
 
 If we want to remove an individual instance from the database, we can use instance.destroy.
 It returns a promise that will be resolved when the row is removed from the database.

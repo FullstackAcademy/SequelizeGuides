@@ -1,5 +1,5 @@
 # Joins/Includes (aka "Eager Loading")
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#eager-loading)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#eager-loading)
 
 If we have two tables that are associated with each other, we often want to join that data together. In raw SQL queries, our favorite tool for this is an INNER JOIN. We can do something similar in Sequelize - it just goes by the slightly different name of "eager loading". Don't get hung up on the terminology - when you see "eager loading", think "join two tables".
 

@@ -1,4 +1,4 @@
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types)
 
 The example below demonstrates some common data types:
 

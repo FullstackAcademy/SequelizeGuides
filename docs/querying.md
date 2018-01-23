@@ -1,7 +1,7 @@
 # Querying Using Models
 
 ## Model.findOne
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-find-search-for-one-specific-element-in-the-database)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-find-search-for-one-specific-element-in-the-database)
 
 Finds a single instance that matches the search criteria (even if there are more than one that match the search criteria - it will return the first it finds)
 
@@ -15,7 +15,7 @@ console.log(foundPug)
 ```
 
 ## Model.findById
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-find-search-for-one-specific-element-in-the-database)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-find-search-for-one-specific-element-in-the-database)
 
 Finds the instance with the specified id.
 
@@ -25,7 +25,7 @@ pugWithIdOne = await Pug.findById(1)
 console.log(pugWithIdOne)
 ```
 ## Model.findAll
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-findall-search-for-multiple-elements-in-the-database)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-findall-search-for-multiple-elements-in-the-database)
 
 Finds all instances that match the search criteria. If no criteria are given, it returns all the instances in the table.
 
@@ -36,7 +36,7 @@ console.log(allPugs)
 ```
 
 ### "Select" Clauses ("attributes")
-[Docs](http://docs.sequelizejs.com/manual/tutorial/querying.html#attributes)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/querying.html#attributes)
 
 You can select specific columns to be included in the returned instance by specifying an "attributes" array.
 
@@ -51,7 +51,7 @@ console.log(allPugs) // [{id: 1, name: 'Cody', age: 7}, {id: 2, name: "Murphy", 
 ```
 
 ### "Where" Clauses
-[Docs](http://docs.sequelizejs.com/manual/tutorial/querying.html#where)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/querying.html#where)
 
 You can narrow down the search in a `findAll` by specifying a `where` clause
 

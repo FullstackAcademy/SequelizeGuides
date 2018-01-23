@@ -60,9 +60,9 @@ console.log(users);
 
 
 
-### Entities vs data
+### Instances vs data
 
-When you console log the returned value from a Sequelize statement just like in the example above, you will see a weird looking object like this:
+When you console log the returned value from a Sequelize statement (just like in the example above), what you see is a weird looking object like this:
 
 ```js
 {
@@ -83,9 +83,9 @@ When you console log the returned value from a Sequelize statement just like in 
 
 ```
 
-This is not an object containing only your data, this is a full instance of that model: It contains the data you queried plus a bunch of additional information and methods.
+This is not a simple object containing only data, this is a full instance of the given model: It contains the data you queried plus a bunch of additional information and methods.
 
-Notice that the data is inside a `dataValues` key, but don't worry about this key - Sequelize creates getters and setters automatically for you wich, in plain english, means you can simply type:
+Notice that the actual data is available inside `dataValues`, but don't worry about this key - Sequelize creates getters and setters automatically for you - In plain english this means that you can simply type the desired field name directly:
 
 ```js
   user.firstName // 'John'
