@@ -23,3 +23,5 @@ pages:
     - Many-Many Associations: "many-many-associations.md"
     - Eager Loading: "eager-loading.md"
 theme: readthedocs
+extra_css:
+    - css/extra.css
