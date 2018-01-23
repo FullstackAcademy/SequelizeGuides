@@ -3,14 +3,12 @@
 Sequelize is available via NPM.
 
 ```bash
-// Using NPM
-$ npm install --save sequelize
+$ npm install sequelize
 
 # And one of the following:
-$ npm install --save pg@6 pg-hstore #pg@7 is currently not supported
-$ npm install --save mysql2
-$ npm install --save sqlite3
-$ npm install --save tedious // MSSQL
+$ npm install pg@6 pg-hstore #pg@7 is currently not supported
+$ npm install mysql2
+$ npm install sqlite3
 ```
 
 # Setting up a connection
@@ -96,7 +94,7 @@ Notice that the actual data is available inside `dataValues`, but don't worry ab
 
 Sequelize uses promises to control async control-flow.
 
-**Note:** Internally, _Sequelize use independent copy of [Bluebird](http://bluebirdjs.com). You can access it using
+**Note:** _Internally, Sequelize use independent copy of [Bluebird](http://bluebirdjs.com). You can access it using
  `Sequelize.Promise` if you want to set any Bluebird specific options_.
 
 

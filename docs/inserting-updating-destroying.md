@@ -110,7 +110,7 @@ console.log(numAffectedRows) // if we had 3 pugs with the age of 7, this will be
 # Using Instances
 
 ## instance.save and instance.update
-[Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#updating-saving-persisting-an-instance)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#updating-saving-persisting-an-instance)
 
 If we already have an instance, we can save changes with either instance.save or instance.update
 
