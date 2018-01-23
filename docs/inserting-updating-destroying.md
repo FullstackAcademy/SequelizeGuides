@@ -123,7 +123,7 @@ console.log(cody.age) // 7
 cody.age = 8 // we can change the age to 8 (but it isn't saved in the database yet)
 cody = await cody.save() // we can use .save to actually save to the database
 
-console.log(updatedCody.age) // 8
+console.log(cody.age) // 8
 ```
 
 Here's another example using update:
@@ -131,7 +131,7 @@ Here's another example using update:
 console.log(cody.age) // 7
 cody = cody.update({age: 8})
   
-console.log(updatedCody.age) // 8  
+console.log(cody.age) // 8  
 ```
 
 ## instance.destroy
