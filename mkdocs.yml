@@ -7,7 +7,8 @@ edit_uri: ""
 pages:
     - Home: "index.md"
     - Getting Started: "getting-started.md"
-    - Model Definition: 
+    - Model: 
+        - Definition: "model-definition.md"
         - Column Types: "column-types.md"
         - Validators and Default Valuew: "validators-and-default-values.md"
         - Hooks: "hooks.md"
@@ -17,9 +18,10 @@ pages:
     - Querying Models: "querying.md"
     - Search Operators: "search-operators.md"
     - "Inserting, updating and destroying": "inserting-updating-destroying.md"
-    - Associations: "associations.md"
-    - One-One Relations: "one-one-relations.md"
-    - One-Many Associations: "one-many-associations.md"
-    - Many-Many Associations: "many-many-associations.md"
+    - Associations: 
+        - Association Types: "association-types.md"
+        - One-One Relations: "one-one-relations.md"
+        - One-Many Associations: "one-many-associations.md"
+        - Many-Many Associations: "many-many-associations.md"
     - Eager Loading: "eager-loading.md"
 theme: readthedocs
