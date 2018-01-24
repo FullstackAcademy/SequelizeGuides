@@ -1,4 +1,4 @@
-[Docs](http://docs.sequelizejs.com/manual/tutorial/hooks.html)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/hooks.html)
 
 When we perform various operations in sequelize (like updating, creating, or destroying an instance), that's not _all_ that happens. There are various stages that an instance goes through as it's being updated/created/destroyed. These are called *lifecycle events*. Hooks give us the ability to "hook" into these lifecycle events and execute arbitrary functions related to that instance.
 

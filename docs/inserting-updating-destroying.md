@@ -1,5 +1,5 @@
 # Model.findOrCreate
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-findorcreate-search-for-a-specific-element-or-create-it-if-not-available)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-findorcreate-search-for-a-specific-element-or-create-it-if-not-available)
 
 Finds an instance that matches the specified query. If no such instance exists, it will create one. This method is a little funny - it returns a promise for an array! The first element of the array is the instance. The second element is a boolean (true or false), which will be true if the instance was newly created, and false if it wasn't (that is, an existing match was found).
 
@@ -110,7 +110,7 @@ console.log(numAffectedRows) // if we had 3 pugs with the age of 7, this will be
 # Using Instances
 
 ## instance.save and instance.update
-[Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#updating-saving-persisting-an-instance)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#updating-saving-persisting-an-instance)
 
 If we already have an instance, we can save changes with either instance.save or instance.update
 
@@ -123,7 +123,7 @@ console.log(cody.age) // 7
 cody.age = 8 // we can change the age to 8 (but it isn't saved in the database yet)
 cody = await cody.save() // we can use .save to actually save to the database
 
-console.log(updatedCody.age) // 8
+console.log(cody.age) // 8
 ```
 
 Here's another example using update:
@@ -131,11 +131,11 @@ Here's another example using update:
 console.log(cody.age) // 7
 cody = cody.update({age: 8})
   
-console.log(updatedCody.age) // 8  
+console.log(cody.age) // 8  
 ```
 
 ## instance.destroy
-[Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#destroying-deleting-persistent-instances)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/instances.html#destroying-deleting-persistent-instances)
 
 If we want to remove an individual instance from the database, we can use instance.destroy.
 It returns a promise that will be resolved when the row is removed from the database.

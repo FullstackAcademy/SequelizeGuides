@@ -1,4 +1,4 @@
-[Docs](http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types)
+[Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types)
 
 The example below demonstrates some common data types:
 
@@ -8,7 +8,7 @@ const Pug = db.define('pugs', {
     type: Sequelize.STRING // for shorter strings (< 256 chars)
   },
   bio: {
-    name: Sequelize.TEXT // for longer strings
+    type: Sequelize.TEXT // for longer strings
   },
   age: {
     type: Sequelize: INTEGER

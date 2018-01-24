@@ -3,14 +3,12 @@
 Sequelize is available via NPM.
 
 ```bash
-// Using NPM
-$ npm install --save sequelize
+$ npm install sequelize
 
 # And one of the following:
-$ npm install --save pg@6 pg-hstore #pg@7 is currently not supported
-$ npm install --save mysql2
-$ npm install --save sqlite3
-$ npm install --save tedious // MSSQL
+$ npm install pg@6 pg-hstore #pg@7 is currently not supported
+$ npm install mysql2
+$ npm install sqlite3
 ```
 
 # Setting up a connection
@@ -60,9 +58,9 @@ console.log(users);
 
 
 
-### Entities vs data
+### Instances vs data
 
-When you console log the returned value from a Sequelize statement just like in the example above, you will see a weird looking object like this:
+When you console log the returned value from a Sequelize statement (just like in the example above), what you see is a weird looking object like this:
 
 ```js
 {
@@ -83,9 +81,9 @@ When you console log the returned value from a Sequelize statement just like in 
 
 ```
 
-This is not an object containing only your data, this is a full instance of that model: It contains the data you queried plus a bunch of additional information and methods.
+This is not a simple object containing only data, this is a full instance of the given model: It contains the data you queried plus a bunch of additional information and methods.
 
-Notice that the data is inside a `dataValues` key, but don't worry about this key - Sequelize creates getters and setters automatically for you wich, in plain english, means you can simply type:
+Notice that the actual data is available inside `dataValues`, but don't worry about this key - Sequelize creates getters and setters automatically for you - In plain english this means that you can simply type the desired field name directly:
 
 ```js
   user.firstName // 'John'
@@ -96,7 +94,7 @@ Notice that the data is inside a `dataValues` key, but don't worry about this ke
 
 Sequelize uses promises to control async control-flow.
 
-**Note:** Internally, _Sequelize use independent copy of [Bluebird](http://bluebirdjs.com). You can access it using
+**Note:** _Internally, Sequelize use independent copy of [Bluebird](http://bluebirdjs.com). You can access it using
  `Sequelize.Promise` if you want to set any Bluebird specific options_.
 
 

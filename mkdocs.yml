@@ -1,7 +1,7 @@
 site_name: Sequelize Guides
 site_url: http://www.mkdocs.org
 site_description: Sequelize simple documentation.
-site_author: Fullstack team and contributors
+site_author: Tom Kelly, Fullstack team and contributors.
 repo_url: https://github.com/FullstackAcademy/SequelizeGuides
 edit_uri: ""
 pages:
@@ -25,3 +25,5 @@ pages:
         - Many-Many Associations: "many-many-associations.md"
     - Eager Loading: "eager-loading.md"
 theme: readthedocs
+extra_css:
+    - css/extra.css
