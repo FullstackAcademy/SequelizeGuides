@@ -61,3 +61,41 @@ TodoList.beforeDestroy((todoListInstance) => {
     })
 })
 ```
+
+
+## Available Hooks (in Order of Operation)
+
+```
+(1)
+  beforeBulkCreate(instances, options)
+  beforeBulkDestroy(options)
+  beforeBulkUpdate(options)
+(2)
+  beforeValidate(instance, options)
+(-)
+  validate
+(3)
+  afterValidate(instance, options)
+  - or -
+  validationFailed(instance, options, error)
+(4)
+  beforeCreate(instance, options)
+  beforeDestroy(instance, options)
+  beforeUpdate(instance, options)
+  beforeSave(instance, options)
+  beforeUpsert(values, options)
+(-)
+  create
+  destroy
+  update
+(5)
+  afterCreate(instance, options)
+  afterDestroy(instance, options)
+  afterUpdate(instance, options)
+  afterSave(instance, options)
+  afterUpsert(created, options)
+(6)
+  afterBulkCreate(instances, options)
+  afterBulkDestroy(options)
+  afterBulkUpdate(options)
+```
