@@ -11,7 +11,7 @@ const Pug = db.define('pugs', {
     type: Sequelize.TEXT // for longer strings
   },
   age: {
-    type: Sequelize: INTEGER
+    type: Sequelize.INTEGER
   },
   birthday: {
     type: Sequelize.DATE
