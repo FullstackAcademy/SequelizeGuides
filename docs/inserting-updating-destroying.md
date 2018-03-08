@@ -129,7 +129,7 @@ console.log(cody.age) // 8
 Here's another example using update:
 ```javascript
 console.log(cody.age) // 7
-cody = cody.update({age: 8})
+cody = await cody.update({age: 8})
   
 console.log(cody.age) // 8  
 ```
