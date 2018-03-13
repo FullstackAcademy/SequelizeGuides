@@ -94,8 +94,8 @@ Notice that the actual data is available inside `dataValues`, but don't worry ab
 
 Sequelize uses promises to control async control-flow.
 
-**Note:** _Internally, Sequelize use independent copy of [Bluebird](http://bluebirdjs.com). You can access it using
- `Sequelize.Promise` if you want to set any Bluebird specific options_.
+**Note:** _Internally, Sequelize uses an independent copy of [Bluebird](http://bluebirdjs.com). You can access it using
+ `Sequelize.Promise` if you want to set any Bluebird-specific options_.
 
 
 Basically, a promise represents a value which will be present at some point - "I promise you I will give you a result or an error at some point". This means that
