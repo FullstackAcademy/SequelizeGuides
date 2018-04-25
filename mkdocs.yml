@@ -10,7 +10,7 @@ pages:
     - Model: 
         - Definition: "model-definition.md"
         - Column Types: "column-types.md"
-        - Validators and Default Valuew: "validators-and-default-values.md"
+        - Validators and Default Values: "validators-and-default-values.md"
         - Hooks: "hooks.md"
         - Instance and Class Methods: "instance-and-class-methods.md"
         - Getters and Setters: "getters-and-setters.md"
