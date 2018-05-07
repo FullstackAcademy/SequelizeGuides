@@ -67,6 +67,6 @@ const getPugs = async () => {
 }
 ```
 
-Note that the difference between the two examples above is that in the `hasOne` case, the resultant owenrs have a "pug" field with the name of their (single) pug. In the `hasMany` case, the resultant owners have a "pugs" (plural!) field with an _array_ of their (possibly many) pugs!
+Note that the difference between the two examples above is that in the `hasOne` case, the resultant owners have a "pug" field with the name of their (single) pug. In the `hasMany` case, the resultant owners have a "pugs" (plural!) field with an _array_ of their (possibly many) pugs!
 
 This same rule applies to many-to-many associations!

@@ -7,7 +7,7 @@ Pug.belongsTo(Owner)
 Owner.hasMany(Pug)
 ```
 
-This means that a pug belongs to an owner, and an owner can have many pugs (also known a a [grumble](https://www.google.com/search?q=grumble+of+pugs&ie=utf-8&oe=utf-8&client=firefox-b-1-ab)).
+This means that a pug belongs to an owner, and an owner can have many pugs (also known as a [grumble](https://www.google.com/search?q=grumble+of+pugs&ie=utf-8&oe=utf-8&client=firefox-b-1-ab)).
 
 By doing this, the following three things will happen/be available to use:
 
