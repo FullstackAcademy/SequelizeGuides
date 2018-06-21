@@ -28,3 +28,48 @@ These relations can be combined to establish *one-one*, *one-many* and *many-man
 * `many-many`
   * `A.belongsToMany(B, {through: 'AB'})`
   * `B.belongsToMany(A, {through: 'AB'})`
+
+## Methods Gained from Associations
+
+By defining the associations between models we gain a series of methods for each model.
+
+### hasOne():
+
+When we set `Parent.hasOne(Child)`, we gain these methods on each instance of the parent:
+
+```
+parent.getChild()
+parent.setChild()
+parent.addChild()
+parent.createChild()
+parent.removeChild()
+parent.hasChild()
+```
+
+### hasMany():
+
+When we set `Parent.hasMany(Child)`, we gain these methods on each instance of the parent:
+```
+parent.getChildren()
+parent.setChildren()
+parent.addChild()
+parent.createChild()
+parent.removeChild()
+parent.hasChild()
+parent.hasChildren()
+```
+
+### belongsTo() & belongsToMany:
+
+When we set `Child.belongsTo(Parent)`, we gain these methods on each instance of the child:
+```
+// belongsTo()
+child.getParent()
+child.setParent()
+child.createParent()
+
+// belongsToMany
+child.getParents()
+child.setParents()
+child.createParents()
+```
