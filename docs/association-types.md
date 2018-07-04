@@ -18,16 +18,16 @@ It is possible to specify the following associations in Sequelize:
 These relations can be combined to establish *one-one*, *one-many* and *many-many* relationships, like so:
 
 * `one-one`
-  * `A.belongsTo(B)`
-  * `B.hasOne(A)`
+  * `Collar.belongsTo(Pug)`
+  * `Pug.hasOne(Collar)`
 
 * `one-many`
-  * `A.belongsTo(B)`
-  * `B.hasMany(A)`
+  * `Pug.belongsTo(Human)`
+  * `Human.hasMany(Pug)`
 
 * `many-many`
-  * `A.belongsToMany(B, {through: 'AB'})`
-  * `B.belongsToMany(A, {through: 'AB'})`
+  * `Pug.belongsToMany(Treat, {through: 'PugTreats'})`
+  * `Treat.belongsToMany(Pug, {through: 'PugTreats'})`
 
 ## Methods Gained from Associations
 
@@ -35,41 +35,41 @@ By defining the associations between models we gain a series of methods for each
 
 ### hasOne():
 
-When we set `Parent.hasOne(Child)`, we gain these methods on each instance of the parent:
+When we set `Human.hasOne(Pug)`, we gain these methods on each instance of the human:
 
 ```
-parent.getChild()
-parent.setChild()
-parent.addChild()
-parent.createChild()
-parent.removeChild()
-parent.hasChild()
+human.getPug()
+human.setPug()
+human.addPug()
+human.createPug()
+human.removePug()
+human.hasPug()
 ```
 
 ### hasMany():
 
-When we set `Parent.hasMany(Child)`, we gain these methods on each instance of the parent:
+When we set `Human.hasMany(Pug)`, we gain these methods on each instance of the human:
 ```
-parent.getChildren()
-parent.setChildren()
-parent.addChild()
-parent.createChild()
-parent.removeChild()
-parent.hasChild()
-parent.hasChildren()
+human.getPugs()
+human.setPugs()
+human.addPug()
+human.createPug()
+human.removePug()
+human.hasPug()
+human.hasPugs()
 ```
 
 ### belongsTo() & belongsToMany:
 
-When we set `Child.belongsTo(Parent)`, we gain these methods on each instance of the child:
+When we set `Pug.belongsTo(Human)`, we gain these methods on each instance of the pug:
 ```
 // belongsTo()
-child.getParent()
-child.setParent()
-child.createParent()
+pug.getHuman()
+pug.setHuman()
+pug.createHuman()
 
 // belongsToMany
-child.getParents()
-child.setParents()
-child.createParents()
+pug.getHumans()
+pug.setHumans()
+pug.createHumans()
 ```
