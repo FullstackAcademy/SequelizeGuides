@@ -12,7 +12,7 @@ const Pug = db.define('pugs', {
     name: Sequelize.TEXT
   },
   age: {
-    type: Sequelize: INTEGER,
+    type: Sequelize.INTEGER,
     validate: {
       min: 0,
       max: 100
