@@ -22,10 +22,10 @@ const db = new Sequelize('postgres://localhost:5432/your-db')
 
 # Your first model
 
-Models are defined with `sequelize.define('name', {attributes}, {options})`.
+Models are defined with the `.define()` method: `db.define('name', {attributes}, {options})`.
 
 ```js
-const User = sequelize.define('user', {
+const User = db.define('user', {
   firstName: {
     type: Sequelize.STRING
   },
