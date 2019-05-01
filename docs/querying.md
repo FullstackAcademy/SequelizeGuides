@@ -14,13 +14,13 @@ console.log(foundPug)
 
 ```
 
-## Model.findById
+## Model.findByPk
 [Official Docs](http://docs.sequelizejs.com/manual/tutorial/models-usage.html#-find-search-for-one-specific-element-in-the-database)
 
-Finds the instance with the specified id.
+Finds the instance with the specified Primary Key (id).
 
 ```javascript
-pugWithIdOne = await Pug.findById(1)
+pugWithIdOne = await Pug.findByPk(1)
 
 console.log(pugWithIdOne)
 ```
