@@ -5,10 +5,8 @@ Sequelize is available via NPM.
 ```bash
 $ npm install sequelize
 
-# And one of the following:
-$ npm install pg@6 pg-hstore #pg@7 is currently not supported
-$ npm install mysql2
-$ npm install sqlite3
+# And the following:
+$ npm install pg
 ```
 
 # Setting up a connection
