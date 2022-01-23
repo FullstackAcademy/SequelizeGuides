@@ -16,7 +16,7 @@ console.log(wasCreated) // true
 
 // now if we findOrCreate a second time...
 
-const arr2 = Pug.findOrCreate({where: {name: 'Cody'}}) 
+const arr2 = await Pug.findOrCreate({where: {name: 'Cody'}}) 
 const instance = arr2[0]
 const wasCreated = arr2[1]
 console.log(instance) // {id: 1, name: 'Cody', etc...}
