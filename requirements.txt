@@ -9,7 +9,7 @@ itsdangerous==0.24
 jmespath==0.9.3
 Markdown==2.6.11
 MarkupSafe==1.0
-mkdocs==0.17.2
+mkdocs==1.2.3
 pipreqs==0.4.9
 PyYAML==3.12
 tornado==4.5.3
