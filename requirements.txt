@@ -12,6 +12,6 @@ MarkupSafe==1.0
 mkdocs==0.17.2
 pipreqs==0.4.9
 PyYAML==3.12
-tornado==4.5.3
+tornado==6.3.3
 urllib3==1.22
 yarg==0.1.9
